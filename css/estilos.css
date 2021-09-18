@@ -1,0 +1,28 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{ 
+  min-height: 50%;
+  
+}
+
+#testimonial{
+  background-color: rgb(206, 213, 210);
+  padding: 5rem 0 5rem 0;
+  text-align:center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+
+}
+
+footer {
+  margin-top: 15rem;
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+  background-color: black;
+
+}

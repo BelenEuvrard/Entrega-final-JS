@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <title>Economia Familiar</title>
+</head>
+<body>
+    <header>     
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <a class="navbar-brand" href="index.html"> <img src="./imagenes/hucha (1).png" alt="logo" style="width:4rem">Economia Familiar</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+           <div class="navbar-nav ml-auto">
+           <a class="nav-link active" href="index.html">Home </a>
+           <a class="nav-link" href="#calcular">Calcular</a>
+           <a class="nav-link" href="#contacto">Contacto</a>
+       
+              </div>
+           </div>
+       </nav>
+
+    </header>
+
+ 
+
+       
+       
+        <main>
+            <section class="mb-5" id="inicio">
+                <div class="container mt-5">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                      <div class="content-left">
+                        <img src="" style="width: 100%;">
+                      </div>  
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <div class="">
+                        <h1 class="display-4">Gestión eficaz de la economia domestica</h1>
+                        <p class="mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, maxime.
+                             </p>
+                        <a href="#" class="btn btn-outline-secondary header-btn btn-lg mt-2">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+              <section class=" mt-5"  id="testimonial">
+                <div class="container">
+                  <p class="h5">
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid facilis sapiente est maiores corrupti, accusamus dicta animi in illo temporibus libero, modi placeat earum esse quo? Minima molestias, nisi sapiente veritatis commodi aspernatur, asperiores consectetur maxime esse soluta facere at, quia vero minus. Hic facere cumque distinctio quisquam quidem ipsam!
+                  </p>
+                  <p class="h5">manuel navarro</p>
+                </div>
+              </section>
+
+
+               <!-- FORM REGISTRO-->
+              <section>
+                <div class="container">
+                <form id="form-registro" class="mb-4">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Nombre y Apellido</span>
+                    </div>
+                    <input type="text" id="nombre" aria-label="Nombre" class="form-control">
+                    <input type="text" id="apellido" aria-label="Apellido" class="form-control">
+                  </div>
+                   
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" id="email" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                     
+                      <button id="botonFormulario" class="btn btn-info" type="submit">enviar</button>
+                </form>
+                  </div>
+                </section>
+
+              <div id="saludo"></div>
+
+
+              <section id="calcular" >
+          <!-- APPLICACION -->
+          <div class="container">
+           
+            <div id="App" class="row pt-5">
+              
+              <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Empecemos</h4>
+                    </div>  
+                    
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">$ ingreso familiar</span>
+                      </div>
+                      <input type="text" id="ingresoFamiliar" class="form-control" aria-label="Amount (to the nearest dollar)">
+                      <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                      </div>
+                    </div>
+                    
+                     <!-- FORM -->
+                    <form  class="card-body" id="form-servicios">
+
+                      <div id="divform-servicios" class="input-group mb-3">
+                        
+          
+                        <div class="input-group mb-3 mt-3">
+                          <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                            <option selected>servicios a descontar</option>
+                            <option value="agua">agua</option>
+                            <option value="luz">luz</option>
+                            <option value="gas">gas</option>
+                          </select>
+                          </div>
+                      
+                        
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">$ importe servicio</span>
+                          </div>
+                          <input type="text" id="importeServicio" class="form-control" aria-label="Amount (to the nearest dollar)">
+                          <div class="input-group-append">
+                            <span class="input-group-text">.00</span>
+                          </div>
+                        </div>
+
+                        <input type="submit" value="Agregar" class="btn btn-primary btn-block">
+
+                        </div>
+                       
+                    </form>
+                </div>
+            </div>
+              <!-- LISTA DE SERVICIOS -->
+            <div id="ingresoServicio" class="col-md-8"></div>              
+          </div>
+        </div>
+              </section>
+
+        </main>
+
+   
+
+    <footer class="ml-auto" id="contacto">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <form class="card mt-4">
+                <div class="card-body">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nombre">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <textarea cols="20" rows="5" placeholder="Mensaje" class="form-control"></textarea>
+                  </div>
+                  <button class="btn btn-outline-secondary btn-block">
+                    Enviar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+   
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+    <script src="productos.js"></script>
+    <script src="UI.js"></script>
+    
+</body>
+</html>
